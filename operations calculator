@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+float no, nt,res;
+int choice;
+int main()
+{
+
+    do
+    {
+        cout<<"1.Addition\n";
+        cout<<"2.Subtraction\n";
+        cout<<"3.Multiplication\n";
+        cout<<"4.Division\n";
+
+        cout<<"Enter Your Choice(1-4): ";
+        cin>>choice;
+        if(choice>=1 && choice<=4)
+        {
+            cout<<"\n Enter two numbers: ";
+            cin>>no>>nt;
+        }
+        switch(choice)
+        {
+            case 1:
+                res = no+nt;
+                cout<<"\nResult = "<<res;
+                break;
+            case 2:
+                res = no-nt;
+                cout<<"\nResult = "<<res;
+                break;
+            case 3:
+                res = no*nt;
+                cout<<"\nResult = "<<res;
+                break;
+            case 4:
+                res = no/nt;
+                cout<<"\nResult = "<<res;
+                break;
+
+
+            default:
+                cout<<"\n !";
+                break;
+        }
+        cout<<"\n*_*-*_*-*_*-*_*-*_*-*_*-*_*-*_*-*_*-*_*-*_*-*_*-\n";
+    }while(choice!=5);
+    cout<<endl;
+    return 0;
+}
