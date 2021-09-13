@@ -68,10 +68,10 @@ void chooseWinner(char uChoice, char cChoice) {
     }
 }
 
-int main() {
-    //User's choice
+int main() 
+{
+ 
     char uChoice;
-    //Compter's choice
     char cChoice;
 
     uChoice = getUserOption();
